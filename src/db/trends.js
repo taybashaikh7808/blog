@@ -19,36 +19,36 @@ const blogs = [
       author: "Emily Davis",
       category: "Productivity",
     },
-    {
-      title: "10 Healthy Habits for a Better Lifestyle",
-      author: "Michael Brown",
-      category: "Health & Wellness",
-    },
-    {
-      title: "Understanding Blockchain and Cryptocurrency",
-      author: "Sophia Martinez",
-      category: "Finance",
-    },
-    {
-      title: "Why Minimalist Living is the New Trend",
-      author: "Daniel Wilson",
-      category: "Lifestyle",
-    },
-    {
-      title: "The Power of Mindfulness: Reducing Stress Effectively",
-      author: "Olivia Taylor",
-      category: "Self-Improvement",
-    },
-    {
-      title: "Cybersecurity in 2024: How to Protect Your Data",
-      author: "William Anderson",
-      category: "Cybersecurity",
-    },
-    {
-      title: "The Ultimate Guide to SEO in 2024",
-      author: "Emma White",
-      category: "Digital Marketing",
-    },
+    // {
+    //   title: "10 Healthy Habits for a Better Lifestyle",
+    //   author: "Michael Brown",
+    //   category: "Health & Wellness",
+    // },
+    // {
+    //   title: "Understanding Blockchain and Cryptocurrency",
+    //   author: "Sophia Martinez",
+    //   category: "Finance",
+    // },
+    // {
+    //   title: "Why Minimalist Living is the New Trend",
+    //   author: "Daniel Wilson",
+    //   category: "Lifestyle",
+    // },
+    // {
+    //   title: "The Power of Mindfulness: Reducing Stress Effectively",
+    //   author: "Olivia Taylor",
+    //   category: "Self-Improvement",
+    // },
+    // {
+    //   title: "Cybersecurity in 2024: How to Protect Your Data",
+    //   author: "William Anderson",
+    //   category: "Cybersecurity",
+    // },
+    // {
+    //   title: "The Ultimate Guide to SEO in 2024",
+    //   author: "Emma White",
+    //   category: "Digital Marketing",
+    // },
   ];
   
   export default blogs;

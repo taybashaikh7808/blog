@@ -2,6 +2,7 @@ import React from "react";
 import TrendsList from "./Components/TrendsList";
 import PeopleToFollow from "./Components/PeopleToFollow";
 import Navigation from "./Components/Navigation"
+import TopicsList from "./Components/TopicsList"
 function App() {
   return (
     <div>
@@ -11,6 +12,7 @@ function App() {
       <div className="w-[400px] flex flex-col gap-4">
         <PeopleToFollow />
         <TrendsList />
+        <TopicsList />
       </div>
     </div>
     </div>
