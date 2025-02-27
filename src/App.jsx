@@ -32,8 +32,8 @@ function App() {
           <button onClick={openModelforNewblog} className="border-2 border-black bg-black text-white w-28 h-10 flex justify-center items-center">
             Add New Blog
           </button>
-          {isModelOpen && <Model>
-            <BlogForm /></Model>}
+          {isModelOpen && <Model onClose={()=>setisModelOpen(false)}>
+            <BlogForm existingBlog = {editing} onClose={()=>setisModelOpen(false)}/></Model>}
         </div>
 
         {/* Sidebar Section - Move Up */}
