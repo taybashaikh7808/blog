@@ -13,7 +13,7 @@ function App() {
   const [editing, setediting] = useState(null)
 
   const openModelforNewblog = () =>{
-    setediting(null)
+    setediting(blogs)
     setisModelOpen(true)
   }
 
@@ -29,7 +29,7 @@ function App() {
 
         {/* Centered Add Blog Button */}
         <div className="flex flex-col items-center justify-center mt-4">
-          <button onClick={openModelforNewblog} className="border-2 border-black bg-black text-white w-28 h-10 flex justify-center items-center">
+          <button onClick={openModelforNewblog} className="border-2 border-black bg-black text-white w-28 h-10 flex justify-center items-center focus:outline-none">
             Add New Blog
           </button>
           {isModelOpen && <Model onClose={()=>setisModelOpen(false)}>
