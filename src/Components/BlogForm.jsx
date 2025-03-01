@@ -20,6 +20,14 @@ function BlogForm({ existingBlog, onClose }) {
       <h3 className="font-semibold text-xl mb-2 text-gray-600">
         {existingBlog ? "Edit Blog" : "Add Blog"}
       </h3>
+      <div className="space-y-4">
+        <input className="w-full h-[40px] p-2 font-semibold" type="text" placeholder="title" value={title} onChange={e => settitle(e.target.value)}/>
+      <textarea type="text" placeholder="description" value={description} onChange={e => setdescription(e.target.value)} />
+      <input type="text" placeholder="image" value={image} onClick={e=>setimage(e.target.value)} />
+      </div>
+      <section>
+        <button>{existingBlog ? "Update" : "Add"}</button>
+      </section>
     </div>
   );
 }
