@@ -38,8 +38,8 @@ function App() {
 
         {/* Sidebar Section - Move Up */}
         <div className="absolute top-[80px] right-4 w-[400px] flex flex-col gap-4">
-          <PeopleToFollow /> {/* This component is now at the top */}
-          <TrendsList />
+          <PeopleToFollow /> 
+          <TrendsList />  
           <TopicsList />
         </div>
       </div>
