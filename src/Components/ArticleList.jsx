@@ -1,9 +1,22 @@
 import React from 'react'
+import BlogContext from '../shared/BlogContext'
+import { useContext } from 'react';
+import ArticleCard from './ArticleCard'
 
 function ArticleList({onEdit}) {
-  //const { blog, deleteBlog } = useContext(BlogContext);
+  const { blog, deleteBlog } = useContext(BlogContext);
   return (
-    <div>ArticleList</div>    
+    <div className="ml-[5rem]">
+      {blog.map((blog)=>(
+       <ArticleCard 
+       key={blog.id} 
+       article={blog}  
+       onDelete={() => deleteBlog(blog.id)} 
+       onEdit={() => onEdit(blog)} 
+     />
+     
+      ))}
+    </div>   
   )
 }
 

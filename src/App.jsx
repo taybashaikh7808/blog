@@ -29,10 +29,10 @@ function App() {
         <Navigation />
 
         {/* Centered Add Blog Button */}
-        <div className="flex flex-col items-center justify-center mt-4">
+        <div className="flex flex-col mt-4 ml-4 w-[300px]">
           <button
             onClick={openModelforNewblog}
-            className="border-2 border-black bg-black text-white w-28 h-10 flex justify-center items-center focus:outline-none"
+            className="border-2 border-black bg-black text-white px-4 py-2 flex justify-center items-center focus:outline-none"
           >
             Add New Blog
           </button>
