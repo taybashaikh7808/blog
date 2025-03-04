@@ -1,14 +1,14 @@
 import React, { createContext, useState } from "react";
 
 // Create Context
-const BlogContext = createContext(undefined);
+const BlogContext = createContext([]);
 
 // Create BlogProvider Component
 export const BlogProvider = ({ children }) => {
   const [blog, setBlog] = useState([]);
 
   const addBlog = (title, content) => {
-    setBlog([...blog, { id: Date.now(), title, content }]);
+    setBlog([...blog, {id: Date.now(), title, content }]);
   };
 
   const deleteBlog = (id) => {
