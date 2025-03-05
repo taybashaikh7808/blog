@@ -6,7 +6,7 @@ import ArticleCard from './ArticleCard'
 function ArticleList({onEdit}) {
   const { blog, deleteBlog } = useContext(BlogContext);
   return (
-    <div className="ml-[5rem]">
+    <div className=" mt-3">
       {blog.map((blog)=>(
        <ArticleCard 
        key={blog.id} 

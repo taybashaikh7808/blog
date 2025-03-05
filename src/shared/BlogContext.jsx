@@ -6,10 +6,17 @@ const BlogContext = createContext([]);
 // Create BlogProvider Component
 export const BlogProvider = ({ children }) => {
   const [blog, setBlog] = useState([]);
-
-  const addBlog = (title, content) => {
-    setBlog([...blog, {id: Date.now(), title, content }]);
+  const addBlog = (title, description, image, time) => {
+    const newBlog = {
+      id: Date.now(), // Generate a unique ID
+      title,
+      description,
+      image,
+      time,
+    };
+    setBlog((prevBlogs) => [...prevBlogs, newBlog]);
   };
+  
 
   const deleteBlog = (id) => {
     setBlog(blog.filter((blog) => blog.id !== id));

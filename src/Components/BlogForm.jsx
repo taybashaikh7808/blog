@@ -20,9 +20,9 @@ function BlogForm({ existingBlog, onClose }) {
 
   const handleSubmit = () => {
     if (existingBlog) {
-      updateBlog(existingBlog.id, title, description);
+      updateBlog(existingBlog.id, title, description,Image,time);
     } else {
-      addBlog(title, description); // Correct function call
+      addBlog(title, description,image,time); // Correct function call
     }
     onClose();
   };
