@@ -3,21 +3,21 @@ import React from "react";
 function ArticleCard({ article, onDelete, onEdit }) {
   console.log(article.description);
   return (
-    <div className="border p-4 rounded shadow w-96 bg-white flex gap-4">
+    <div className="border p-4 rounded shadow w-96 bg-white flex gap-4 mt-3">
       {/* Image on the Left */}
       <img
         src={article.image}
         alt={article.title}
-        className="w-24 h-24 rounded object-cover border-2"
+        className="w-[200px] h-34 rounded object-cover border-2"
       />
 
       {/* Text Content */}
       <div className="flex flex-col flex-1">
         <h3 className="font-bold text-lg">{article.title}</h3>
-        <p className="text-sm text-gray-600 mt-1 break-words">
+        <p className="text-xl text-gray-600 mt-1 break-words">
           {article.description}
         </p>
-        <span className="text-xs text-gray-500 mt-1">{article.time}</span>
+        <span className="text-md text-gray-500 mt-1">{article.time}</span>
 
         {/* Buttons */}
         <div className="flex gap-2 mt-2">

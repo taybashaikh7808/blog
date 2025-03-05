@@ -18,7 +18,7 @@ function App() {
     setisModelOpen(true);
   };
 
-  const openModelforEdit = () => {
+  const openModelforEdit = (blog) => {
     setediting(blog);
     setisModelOpen(true);
   };

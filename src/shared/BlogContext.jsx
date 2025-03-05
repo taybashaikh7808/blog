@@ -22,13 +22,16 @@ export const BlogProvider = ({ children }) => {
     setBlog(blog.filter((blog) => blog.id !== id));
   };
 
-  const updateBlog = (id, updatedTitle, updatedContent) => {
-    setBlog(
-      blog.map((blog) =>
-        blog.id === id ? { ...blog, title: updatedTitle, content: updatedContent } : blog
+  const updateBlog = (id, updatedTitle, updatedDescription, updatedImage, updatedTime) => {
+    setBlog((prevBlogs) =>
+      prevBlogs.map((blog) =>
+        blog.id === id
+          ? { ...blog, title: updatedTitle, description: updatedDescription, image: updatedImage, time: updatedTime }
+          : blog
       )
     );
   };
+  
 
   return (
     <BlogContext.Provider value={{ blog, addBlog, deleteBlog, updateBlog }}>
